@@ -1,0 +1,41 @@
+@font-face { font-family: 'SpaceMono' ; src: url('/public/font/SpaceMono.ttf');}
+
+.Content{
+    padding: 12px;
+    font-family: 'SpaceMono';
+
+    & nav{
+        top: 0; left: 0;
+        width: 100%;
+        position: fixed;
+        display: flex; gap: 100px;
+        padding: 30px 12px;
+        background-color: white;
+        border-bottom: 1px solid black;
+
+        & a{color: inherit;}
+    }
+
+    & p.article{
+        padding-top: 108px;
+    }
+
+    & span{
+        text-decoration: underline;
+    }
+
+    & hr {
+        border: none;
+        border-top: 2px dashed black;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .Content nav{gap: 10px;
+        justify-content: space-between;
+    }
+
+}
